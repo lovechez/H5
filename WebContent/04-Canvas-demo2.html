@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<canvas id="canvas" width="800" height="600" />
+
+<script type="text/javascript">
+	//画布
+	var canvas = document.getElementById("canvas");
+	//画笔 
+	var context = canvas.getContext("2d");
+	//样式
+	context.strokeStyle = "rgba(255,0,0,0.5)";
+	//园
+	context.beginPath();
+	context.arc(300,300, 50, 0, Math.PI * 2, false); //false 顺时针  true 逆时针
+	context.closePath();
+	context.stroke();
+	
+	
+
+		
+</script>
+
+</body>
+</html>

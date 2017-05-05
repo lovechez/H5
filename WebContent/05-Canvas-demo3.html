@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<canvas id="canvas" height="1000" width="600"/>
+
+<script type="text/javascript">
+	var canvas = document.getElementById("canvas");
+	var context = canvas.getContext("2d");
+	
+	//绘制图片
+	var image = new Image();
+	image.src = "美女.jpg";
+	image.onload = function(){
+		//显示图像
+		context.drawImage(image, 100,100, 300, 400);
+	}
+	
+	
+
+
+</script>
+
+</body>
+</html>
